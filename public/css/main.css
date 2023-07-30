@@ -1,0 +1,179 @@
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+.container {
+    width: 50%;
+    margin: auto;
+}
+.header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.expense-title {
+    text-align: center;
+}
+#login_logout {
+    float: right;
+    margin: 10px;
+
+}
+
+#btn-login, #btn-logout{
+    /* background-color: green; */
+    padding: 0.5rem 0.5rem;
+    font-size: 1x   rem;
+    border: 2px solid;
+    /* color: b; */
+    border-radius: 5px;
+}
+.balance {
+    text-align: center;
+    margin: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    border: 4px solid gray;
+}
+.inc-exp-container {
+    display: flex;
+    justify-content: space-between;
+}
+.income {
+    margin: 20px;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid rgb(8, 184, 8);
+}
+.income h2 {
+    color: rgb(8, 184, 8);
+    font-size: 2rem;
+}
+.expense {
+    margin: 20px;
+    padding: 10px;
+    width: 40%;
+    text-align: center;
+    border-radius: 10px;
+    border: 4px solid red;
+}
+.expense h2 {
+    color: red;
+    font-size: 2rem;
+}
+.history-box {
+    display: block;
+}
+.history-box {
+    height: 25rem;
+    overflow: hidden;
+    &:hover {
+        overflow-y: scroll;
+        padding-right: 1rem;
+    }
+}
+.history-box li {
+    font-size: 1.2rem;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    border-radius: 10px;
+    padding: 0px 4px 0px 4px;
+    font-weight: 500;
+}
+.history-box li span {
+    margin: 10px;
+    border-radius: 10px;
+    padding: 15px 4px 0px 0px;
+    font-weight: 700;
+    font-size: 1.3rem;
+}
+.history-box li span i {
+    padding-left: 10px;
+    color: red;
+}
+.plus {
+    border: 3px solid rgb(8, 184, 8);
+}
+.plus h4 {
+    color: rgb(8, 184, 8);
+}
+.minus {
+    border: 3px solid red;
+}
+.minus h4 {
+    color: red;
+}
+.transaction-title {
+    margin-bottom: 1rem;
+}
+.transaction-form {
+    display: flex;
+    flex-direction: column;
+}
+input {
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    font-weight: normal;
+    border-radius: 5px;
+}
+input:placeholder {
+    font-size: 1rem;
+}
+#btn {
+    background-color: rgb(15, 14, 14);
+    padding: 0.5rem 2rem;
+    font-size: 1.3rem;
+    border: 0px;
+    color: white;
+    border-radius: 10px;
+}
+@media (max-width: 570px) {
+    .expense-title {
+        font-size: x-large;
+        text-align: center;
+        padding-left: 20px;
+    }
+    .inc-exp-container {
+        display: block;
+    }
+    .balance {
+        width: 100%;
+    }
+    .income {
+        width: 100%;
+    }
+    .expense {
+        width: 100%;
+    }
+    .history-box li {
+        font-size: 1rem;
+        margin: 0px;
+        padding-right: 0px;
+    }
+    .history-box li span {
+        padding-right: 0px;
+        font-size: 0.8rem;
+        margin-left: 4px;
+    }
+}
